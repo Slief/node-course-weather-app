@@ -1,3 +1,6 @@
+Start nodemon
+- nodemon src/app.js -e js,hbs
+
 Add to git
 - from root     git init
 - add file  .gitignore
@@ -6,3 +9,6 @@ Add to git
 - git status   to see
 - git commit -m "Init commit"
 
+Upload changed files to git
+- git status 
+- git add .
