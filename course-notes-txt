@@ -12,3 +12,8 @@ Add to git
 Upload changed files to git
 - git status 
 - git add .
+- git commit -m "Changes to about page"
+- git push          equivalent to git push orign master
+
+Push to heroku
+- git push heroku master      pushers latest commit to heroku

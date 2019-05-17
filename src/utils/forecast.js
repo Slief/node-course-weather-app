@@ -3,14 +3,19 @@ const request = require('request')
 const forecast = (latitude, longitude, callback) => {
     let urlOptions = '?units=si'
     urlOptions = ''
+    
     const url = 'https://api.darksky.net/forecast/20a0a8105d01c42f63a50d41fe02aa69/' + latitude + ','+ longitude +'' + urlOptions
+
     request({url, json: true}, (error, {body}) => {
         if (error) {
             callback('Unable to contact weather service!')
         } else if (body.error) {
             callback('Unable to find location. Error: '+ body.code + ' - '+ body.error)
         } else {
-            callback(undefined, body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degrees outside. There is ' + body.currently.precipProbability + '% chance of rain.')
+            // console.log(body.daily.data[0])
+            callback(undefined, body.daily.data[0].summary + ' It is currently ' + 
+            body.currently.temperature + " degrees outside. The high today is " + body.daily.data[0].temperatureHigh +
+            " with a low of " + body.daily.data[0].temperatureLow + " degrees. There is " + body.currently.precipProbability + '% chance of rain.')
         }
     })
 }
