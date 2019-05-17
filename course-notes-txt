@@ -1,0 +1,8 @@
+Add to git
+- from root     git init
+- add file  .gitignore
+- add node_modules/  to .gitignore
+- git add .
+- git status   to see
+- git commit -m "Init commit"
+
