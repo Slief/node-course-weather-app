@@ -1,4 +1,4 @@
-console.log('Client side JS file is loaded')
+// console.log('Client side JS file is loaded')
 
 // to start app goto directory and type:
 // C:\Dev\node-course\web-server\src> nodemon app.js
