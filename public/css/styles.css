@@ -53,3 +53,17 @@ button {
     padding: 8px;
 
 }
+#alert-1 {
+    background: red;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#alert-2 {
+    background: white;
+    color: black;
+    font-size: 1.0em;
+    font-style: italic;
+    
+}
