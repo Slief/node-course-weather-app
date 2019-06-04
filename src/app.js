@@ -51,6 +51,7 @@ app.get('/weather', (req, res) => {
         })
     }
     //  http://localhost:3000/weather?address=Storm%20Lake,%20IA
+    //  https://sliefert-weather.herokuapp.com/weather?address=Storm%20Lake,%20IA
 
     geocode(req.query.address, (error, {latitude, longitude, location} = {}) => {
         if (error) {

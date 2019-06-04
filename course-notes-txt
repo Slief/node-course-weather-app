@@ -20,3 +20,19 @@ Push to heroku ( production)
 
 Start local Note: See package.json script   dev)
  - npm run dev
+
+>>>>>>>>>>> Task manager
+install MongoDB application
+- within VS Code terminal, to run MongoDB     /users/bslie/mongodb/bin/mongod.exe --dbpath=/users/bslie/mongodb-data
+- npm init -y         to create package.json et application
+- npm i mongodb       to install drivers
+- node mongodb.js     to run sample app
+- http://mongodb.github.io/node-mongodb-native/3.2/api/MongoClient.html  mongo - node docs
+
+- install mongoose        npm i mongoose
+- install validator       npm i validator
+- REST representational state transfer
+
+after changes to package.json,to start app
+- npm run dev
+- https://httpstatuses.com/
